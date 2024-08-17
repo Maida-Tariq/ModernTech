@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ModernTech</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!--Header-->
@@ -22,28 +30,32 @@
     </header>
 
     <!--Hero Section-->
-    <section id="home">
-        <h1>Elevate Your Tech Game</h1>
-        <p>Transform your digital experience with cutting-edge solutions tailored to your needs.</p>
-        <button>Explore More</button>
+    <section id="home"> 
+        <h1 data-aos="fade-right">Elevate Your Tech Game</h1>
+        <p data-aos="fade-right">Transform your digital experience with cutting-edge solutions tailored to your needs. Our innovative technology helps you streamline operations, enhance efficiency, and stay ahead of the competition. </p>
+        <button data-aos="zoom-out">Explore More</button>
     </section>
 
     <!--Features Section-->
     <section id="features">
         <h2>Features That Stand Out</h2>
         <div class="feature">
+            <i class="fa-solid fa-anchor"></i>
             <h4>Seamless Integration</h4>
             <p>Effortlessly integrate with your current systems for a smooth and optimized workflow.</p>
         </div>
         <div class="feature">
+            <i class="fa-solid fa-microchip"></i>
             <h4>Cutting-Edge Technology</h4>
             <p>Built using the latest in tech innovation, ensuring you stay ahead of the competition.</p>
         </div>
         <div class="feature">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
             <h4>Scalability</h4>
             <p>Designed to grow with your business, no matter the size or demand.</p>
         </div>
         <div class="feature">
+            <i class="fa-solid fa-user"></i>
             <h4>24/7 Support</h4>
             <p>Our team is always available to assist you, ensuring uninterrupted performance.</p>
         </div>
@@ -128,4 +140,15 @@
         <p>ModernTech, 1234 Innovation Drive, San Francisco, CA 94103</p>
     </section>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            // Global settings:
+            duration: 1200, // Duration of animations in milliseconds
+            easing: 'ease-in-out', // Easing function for animations
+            once: true, // Whether animation should happen only once - while scrolling down
+        });
+    });
+</script>
+
 </html>
