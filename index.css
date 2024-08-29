@@ -1,14 +1,14 @@
 /* Global Styles */
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    background-color: black; /* Background color for the whole page */
+    color: white; /* Default text color */
     line-height: 1.6;
 }
 
@@ -90,6 +90,7 @@ header nav ul li a:hover {
 #features {
     padding: 50px 20px;
     text-align: center;
+    background: #111; /* Sets background color for features section */
 }
 
 #features h2 {
@@ -110,7 +111,7 @@ header nav ul li a:hover {
 }
 
 .feature {
-    background-color: #222;
+    background-color: #222; /* Ensures feature boxes have a background */
     padding: 20px;
     border-radius: 10px;
     width: 22%;
@@ -142,7 +143,7 @@ header nav ul li a:hover {
 #testimonials {
     padding: 50px 20px;
     text-align: center;
-    background: #111;
+    background: #111; /* Sets background color for testimonials section */
 }
 
 #testimonials h2 {
@@ -158,7 +159,7 @@ header nav ul li a:hover {
 .testimonial {
     margin: 20px auto;
     padding: 20px;
-    background: #222;
+    background: #222; /* Ensures testimonial boxes have a background */
     border-radius: 10px;
     max-width: 600px;
     text-align: center;
@@ -188,6 +189,7 @@ header nav ul li a:hover {
 #pricing {
     padding: 50px 20px;
     text-align: center;
+    background: #111; /* Sets background color for pricing section */
 }
 
 #pricing h2 {
@@ -201,7 +203,7 @@ header nav ul li a:hover {
 }
 
 .plan {
-    background: #222;
+    background: #222; /* Ensures plan boxes have a background */
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -244,9 +246,11 @@ header nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    padding: 20px;
-    background-color: #000;
-    text-align: center;
+    padding: 30px;
+    background-color: #111; 
     color: white;
-    border-top: 2px solid darkcyan; /* Adds a border on top of footer */
+    border-top: 2px solid darkcyan; /* Adds a border on top of the footer */
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
 }
